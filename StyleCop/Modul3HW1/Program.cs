@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Modul3HW1
 {
@@ -6,9 +7,8 @@ namespace Modul3HW1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hello World!");
+            var starter = new Starter();
+            starter.Run();
         }
     }
 }
