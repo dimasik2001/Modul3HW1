@@ -53,7 +53,7 @@ namespace Modul3HW1
         {
             if (_capacity < _count + collection.Count)
             {
-                Resize(_capacity + collection.Count);
+                Resize(_count + collection.Count);
             }
 
             collection.CopyTo(_array, Count);
@@ -62,7 +62,7 @@ namespace Modul3HW1
 
         public void Add(T item)
         {
-            if (_capacity <= Count)
+            if (_capacity <= _count)
             {
                 Resize(_capacity * 2);
             }
